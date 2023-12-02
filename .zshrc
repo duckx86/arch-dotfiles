@@ -76,8 +76,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export GTK_THEME=Catppuccin-Mocha-Standard-Sapphire-Dark
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
