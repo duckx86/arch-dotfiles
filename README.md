@@ -15,7 +15,7 @@ GTK stuff
 - Cursor theme: Bibata-Modern-Ice
 - Icon theme: Papirus-Dark
 <br>
-> **Note that I wrote this based off what I remember, so I might forget about a few things.**
+> Note that I wrote this based off what I remember, so I might forget about a few things.
 
 # Base Packages
 Make sure that you have yay installed.
