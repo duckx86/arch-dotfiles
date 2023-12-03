@@ -4,7 +4,12 @@
 CURSOR_THEME=Bibata-Modern-Ice
 CURSOR_SIZE=21
 
+GTK_THEME=Catppuccin-Mocha-Standard-Sapphire-Dark
+GTK_ICON_THEME=Papirus-Dark
+
 gsettings set org.gnome.desktop.interface cursor-theme $CURSOR_THEME
+gsettings set org.gnome.desktop.interface gtk-theme $GTK_THEME
+gsettings set org.gnome.desktop.interface icon-theme $GTK_ICON_THEME
 
 hyprctl setcursor $CURSOR_THEME $CURSOR_SIZE
 
