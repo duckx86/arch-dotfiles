@@ -1,6 +1,24 @@
 # Arch Dotfiles
 My very basic arch linux dotfiles
 
+```
+      /\           (◔◡◔) ➜ muhky@Archery 
+     /  \          -------------------------- 
+    /\   \         ╭ distro ➜ Arch x86_64 
+   /      \        ⋮ kernel ➜ 6.1.64-1-lts 
+  /   ,,   \       ⋮ packages ➜ 710 
+ /   |  |  -\      ⋮ shell ➜ zsh 5.9 
+/_-''    ''-_\     ╰ de ➜ Hyprland 
+                    
+                   ╭ terminal ➜ kitty 
+                   ⋮ cpu ➜ Pentium Silver N5000 (4) @ 1.100GHz 
+                   ⋮ gpu ➜ GeminiLake [UHD Graphics 605] 
+                   ╰ memory ➜ 429MiB / 3742MiB 
+                    
+                   ⬤ root (/) ➜ 9.4G / 64G (16%) 
+                   -------------------------- 
+```
+
 > I know it looks trash, but it works (and I'm lazy).
 
 - WM: Hyprland
@@ -17,11 +35,16 @@ GTK stuff
 <br>
 > Note that I wrote this based off what I remember, so I might forget about a few things.
 
-# Base Packages
+# Minimal Base Packages
 Make sure that you have yay installed.
 
 ```
 yay -S hyprland-git lxappearance thunar wofi kitty bibata-cursor-theme catppuccin-gtk-theme-mocha nvim ttf-jetbrains-mono-nerd papirus-icon-theme pavucontrol brightnessctl zsh
+```
+
+# Extra Packages
+```
+yay -S noto-fonts noto-fonts-cjk noto-fonts-extra
 ```
 
 # Installation
