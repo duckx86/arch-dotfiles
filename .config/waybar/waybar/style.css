@@ -1,0 +1,255 @@
+/* Copied config from SolDoesTech, because I'm so lazy. */
+
+/* Catpuccin mocha color scheme */
+/*
+*
+* Catppuccin Mocha palette
+* Maintainer: rubyowo
+*
+*/
+
+@define-color base   #1e1e2e;
+@define-color mantle #181825;
+@define-color crust  #11111b;
+
+@define-color text     #cdd6f4;
+@define-color subtext0 #a6adc8;
+@define-color subtext1 #bac2de;
+
+@define-color surface0 #313244;
+@define-color surface1 #45475a;
+@define-color surface2 #585b70;
+
+@define-color overlay0 #6c7086;
+@define-color overlay1 #7f849c;
+@define-color overlay2 #9399b2;
+
+@define-color blue      #89b4fa;
+@define-color lavender  #b4befe;
+@define-color sapphire  #74c7ec;
+@define-color sky       #89dceb;
+@define-color teal      #94e2d5;
+@define-color green     #a6e3a1;
+@define-color yellow    #f9e2af;
+@define-color peach     #fab387;
+@define-color maroon    #eba0ac;
+@define-color red       #f38ba8;
+@define-color mauve     #cba6f7;
+@define-color pink      #f5c2e7;
+@define-color flamingo  #f2cdcd;
+@define-color rosewater #f5e0dc;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    min-height: 4px;
+}
+
+window#waybar {
+     background: transparent;
+     color: @text;
+}
+
+tooltip {
+    background: @crust;
+    color: #fff;
+}
+
+/*
+#workspaces button {
+    border-radius: 16px;
+    color: @text;
+}
+
+#workspaces button.active {
+    color: @mauve;
+}
+
+#workspaces button.focused {
+    color: @lavender;
+    background: @maroon;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#workspaces button:hover {
+    background-color: @mauve;
+}
+
+*/
+
+#workspaces{
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+#workspaces button{
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    background-color: #fff ;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    font-weight: bolder;
+    color: 	#cba6f7 ;
+}
+
+#workspaces button.active{
+    padding-right: 20px;
+    box-shadow: rgba(0, 0, 0, 0.288) 2 2 5 2px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    padding-left: 20px;
+    padding-bottom: 3px;
+    background: rgb(202,158,230);
+    background: linear-gradient(45deg, rgba(202,158,230,1) 0%, rgba(245,194,231,1) 43%, rgba(180,190,254,1) 80%, rgba(137,180,250,1) 100%); 
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#custom-weather,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth,
+#temperature,
+#workspaces,
+#tray,
+#custom-swaync,
+#backlight {
+    background: @base;
+    opacity: 1.0;
+    padding: 2px 8px;
+    margin: 3px 0px;
+    margin-top: 8px;
+}
+
+#temperature {
+    border-radius: 15px 0px 0px 15px;
+    color: @peach;
+}
+
+#temperature.critical {
+    color: @maroon;
+}
+
+#backlight {
+    border-radius: 15px 0px 0px 15px;
+}
+
+#tray {
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    /* -- special -- */
+    background-color: transparent;
+    border-radius: 15px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#window {
+    border-radius: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#clock {
+    background: rgb(245,194,231);
+    background: linear-gradient(45deg, rgba(245,194,231,1) 0%, rgba(203,166,247,1) 64%, rgba(202,158,230,1) 100%);
+    margin-right: 10px; 
+    color: #fff ;
+    background-size: 300% 300%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    animation: gradient 20s ease infinite;
+    padding-right: 12px;
+    font-weight: bolder;
+    padding-left: 12px;
+    border-radius: 15px;
+}
+
+#network {
+    color: @yellow;
+    border-radius: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#bluetooth {
+    color: #89b4fa;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: 10px
+} 
+
+#pulseaudio {
+    color: @blue;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+#pulseaudio.microphone {
+    color: @mauve;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px 15px 15px 0px;
+    margin-right: 10px;
+}
+
+#battery {
+    background: @subtext1;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding-right: 12px;
+    padding-left: 12px;
+    animation: gradient 20s ease infinite;
+}
+
+#custom-weather {
+    border-radius: 0px 15px 15px 0px;
+    border-right: 0px;
+    margin-left: 0px;
+}
+
+#custom-swaync {
+    border-radius: 15px;
+    margin-right: 10px;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+    background: rgb(206,168,250);
+    background: linear-gradient(213deg, rgba(206,168,250,1) 0%, rgba(242,151,255,1) 39%, rgba(229,170,253,1) 49%, rgba(217,187,251,1) 88%, rgba(168,222,255,1) 100%);
+    background-size: 600%;
+    animation: gradient 10s ease infinite;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+}
