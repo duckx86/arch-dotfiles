@@ -1,6 +1,10 @@
 <div align="justify">
 <div align="center">
 
+```
+soothing arch linux rice
+```
+
 ![GitHub repo size](https://img.shields.io/github/repo-size/duckx86/arch-dotfiles)
 
 <details>
