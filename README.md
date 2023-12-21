@@ -10,7 +10,7 @@ My very basic arch linux dotfiles
 - Shell: zsh
 - Color scheme: catppuccin
 
-GTK stuff
+GTK themes
 - Theme: Catppuccin-Mocha-Standard-Sapphire-Dark
 - Cursor theme: Bibata-Modern-Ice
 - Icon theme: Papirus-Dark
