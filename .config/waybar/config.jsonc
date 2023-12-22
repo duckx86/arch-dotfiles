@@ -6,16 +6,16 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 35,
-    "modules-left": ["hyprland/workspaces", "clock"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["temperature", "network","battery","backlight","pulseaudio","pulseaudio#microphone","tray"],
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["battery","clock", "tray", "custom/swaync"],
     "hyprland/window": {
         "format": "{}"
     },
 
     "hyprland/workspaces": {
         //"format": "{name}",
-        "format": "{icon}",
+        "format": "{name}",
         "format-icons": {
             "active": "",
             "default": ""
@@ -33,14 +33,23 @@
         "return-type" : "json"
     },
 
+    "custom/swaync" : {
+        "format": "←",
+        "tooltip": true,
+        "icon-size": 18,
+        "on-click": "swaync-client -op"
+    },
+
     "tray": {
         "icon-size": 18,
         "spacing": 10
     },
 
     "clock": {
-        "format": "{: %I:%M %p   %a, %b %e}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        //"format": "{: %I:%M %p   %a, %b %e}",
+        "format": "{:%I:%M %p}",
+        "format-alt": "{:%I:%M %p, %a %b %e}",
+        "tooltip-format": "<big>{:%Y %B, %a %b %e}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
     "backlight": {
@@ -58,10 +67,12 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{time} {icon}",
+        //"format": "{icon} {capacity}%",
+        //"format-charging": " {capacity}%",
+        //"format-plugged": " {capacity}%",
+        //"format-alt": "{time} {icon}",
+        "format": "{icon}",
+        "format-alt": "{icon} {capacity}%",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
