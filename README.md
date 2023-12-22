@@ -31,7 +31,7 @@ Notification: [swaync](https://github.com/ErikReider/SwayNotificationCenter)<br>
 Make sure that you have [yay](https://github.com/Jguer/yay) installed.
 
 ```ocaml
-yay -S hyprland-git lxappearance thunar wofi kitty bibata-cursor-theme catppuccin-gtk-theme-mocha nvim ttf-jetbrains-mono-nerd papirus-icon-theme pavucontrol brightnessctl zsh swaync noto-fonts noto-fonts-cjk noto-fonts-extra
+yay -S hyprland-git waybar-hyprland lxappearance nemo wofi kitty bibata-cursor-theme catppuccin-gtk-theme-mocha nvim ttf-jetbrains-mono-nerd papirus-icon-theme pavucontrol brightnessctl zsh swaync noto-fonts noto-fonts-cjk noto-fonts-extra
 ```
 
 # install
