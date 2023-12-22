@@ -60,4 +60,5 @@ If your browser (e.g Chromium) isn't respecting your cursor theme, **open ~/.ico
 # credits
 
 [PROxZIMA](https://github.com/PROxZIMA/.dotfiles/)<br>
-[flick0](https://github.com/flick0/dotfiles/tree/dreamy)
+[flick0](https://github.com/flick0/dotfiles/tree/dreamy)<br>
+bg from : [here](https://photos.google.com/share/AF1QipOtA42jn_ReuQVv8uVXpWl0PNjhXRw7e_EGUT3m-2wOVUUfDsX1OUvm5c8_GL2gvg/photo/AF1QipNlV9LJZB-c9sMAILaeSaKYI_uYn41thkw9IJaG?key=SUxqZ1BMSVVUdjJjbk1DSzZwZ0VEenpxQk1nM3p3)
